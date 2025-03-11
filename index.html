@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowcus - Focus on What Truly Matters</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="images/flowcus-logo.svg" alt="Flowcus Logo">
+                    <h1>Flowcus</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="https://chromewebstore.google.com/detail/error" class="cta-button">Get Flowcus</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Boost Your Productivity</h1>
+                    <h2>Focus on What Truly Matters</h2>
+                    <p>Flowcus helps you track and manage your screen time, blocking distracting websites so you can stay in the flow and accomplish more.</p>
+                    <div class="hero-buttons">
+                        <a href="https://chromewebstore.google.com/detail/error" class="cta-button"><i class="fab fa-chrome"></i> Add to Chrome</a>
+                        <a href="#features" class="secondary-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="focus-flow-card">
+                        <div class="header">
+                            <div class="header-content">
+                                <h1>Focus Flow</h1>
+                                <div class="checkmark-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2>Today's Stats</h2>
+                        <div class="card">
+                            <div class="stats">
+                                <div class="stat-item">
+                                    <div class="stat-value" id="totalScreenTime">3h 24m</div>
+                                    <div class="stat-label">Total Screen Time</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-value" id="sitesVisited">4</div>
+                                    <div class="stat-label">Sites Visited</div>
+                                </div>
+                            </div>
+                            <button class="more-details-btn" id="moreDetailsBtn">More Details</button>
+                            <div class="dropdown-container" id="websiteDetailsDropdown">
+                                <div class="site-usage-item">
+                                    <span class="site-usage-domain">docs.google.com</span>
+                                    <span class="site-usage-time">1h 23m</span>
+                                </div>
+                                <div class="site-usage-item">
+                                    <span class="site-usage-domain">youtube.com</span>
+                                    <span class="site-usage-time">38m</span>
+                                </div>
+                                <div class="site-usage-item">
+                                    <span class="site-usage-domain">tiktok.com</span>
+                                    <span class="site-usage-time">40m</span>
+                                </div>
+                                <div class="site-usage-item">
+                                    <span class="site-usage-domain">mail.google.com</span>
+                                    <span class="site-usage-time">24m</span>
+                                </div>
+                                <div class="site-usage-item">
+                                    <span class="site-usage-domain">instagram.com</span>
+                                    <span class="site-usage-time">19m</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card" id="currentSite">
+                            <p>Current Active Site: <strong>newtab</strong></p>
+                            <p>Time Spent: <strong>0m 5s</strong></p>
+                        </div>
+                        
+                        <h2>Block a Website</h2>
+                        <div class="form-group">
+                            <input type="text" id="blockSite" placeholder="Enter website URL to block" />
+                            <button id="blockBtn">Block</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge"><i class="fas fa-bolt"></i> Powerful Features</span>
+                <h2>Everything You Need to Stay Focused</h2>
+                <p>Take control of your digital habits and boost productivity with these powerful tools.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon analytics">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Detailed Analytics</h3>
+                    <p>Track your time spent on different websites with detailed daily, weekly, and monthly reports.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon blocking">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Website Blocking</h3>
+                    <p>Set time limits and block distracting websites when you need to focus on important tasks.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon alerts">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>Smart Alerts</h3>
+                    <p>Receive notifications when you've spent too much time on distracting websites.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon tracking">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Time Tracking</h3>
+                    <p>Monitor your daily screen time and see which websites consume most of your attention.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon scheduled">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Scheduled Blocking</h3>
+                    <p>Schedule specific times for website blocking to establish a consistent productivity routine.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon focus">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Focus Mode</h3>
+                    <p>Activate focus mode to temporarily block all distracting websites with a single click.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Simple Setup</span>
+                <h2>How Flowcus Works</h2>
+                <p>Get started in minutes and transform your digital habits.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Install the Extension</h3>
+                    <p>Download and install Flowcus from the Chrome Web Store with just one click.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Set Your Preferences</h3>
+                    <p>Configure your time limits, blocked websites, and notification preferences.</p>
+                </div>
+                
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Stay Focused</h3>
+                    <p>Let Flowcus work in the background while you focus on what matters most.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Testimonials</span>
+                <h2>What Our Users Say</h2>
+                <p>Join thousands of professionals who have transformed their productivity with Flowcus.</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Flowcus has completely transformed how I work. I used to waste hours on social media, but now I'm much more productive. The analytics help me understand my habits and make better choices."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Sarah K.</h4>
+                            <p>Product Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a developer, I need long periods of uninterrupted focus. Flowcus helps me stay in the zone by blocking distracting sites during my work hours. Game changer for remote work!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Michael T.</h4>
+                            <p>Senior Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I recommend Flowcus to all my students. It helps them stay on task during study sessions and creates awareness about their digital habits. Simple but powerful tool."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Emily R.</h4>
+                            <p>Education Consultant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Meet The Team</span>
+                <h2>The Minds Behind Flowcus</h2>
+                <p>Our dedicated team of developers committed to helping you regain control of your digital life.</p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-initials">MZ</div>
+                    <h4>Michael Zhang</h4>
+                    <p>Developer</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-initials">BY</div>
+                    <h4>Bryan Yao</h4>
+                    <p>Developer</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-initials">EM</div>
+                    <h4>Eric Ma</h4>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to transform your digital habits?</h2>
+                <p>Join thousands of professionals who have improved their productivity with Flowcus.</p>
+                <div class="cta-buttons">
+                    <a href="https://chromewebstore.google.com/detail/error" class="cta-button"><i class="fab fa-chrome"></i> Add to Chrome</a>
+                    <a href="#features" class="secondary-button">See All Features</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/flowcus-logo.svg" alt="Flowcus Logo">
+                    <span>© 2025 Flowcus. All rights reserved.</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://chromewebstore.google.com/detail/error">Chrome Web Store</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
